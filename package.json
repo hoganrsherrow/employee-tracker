@@ -1,0 +1,25 @@
+{
+  "name": "employee-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoganrsherrow/employee-tracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hoganrsherrow/employee-tracker/issues"
+  },
+  "homepage": "https://github.com/hoganrsherrow/employee-tracker#readme",
+  "dependencies": {
+    "inquirer": "^9.1.1",
+    "mysql2": "^2.3.3"
+  }
+}
