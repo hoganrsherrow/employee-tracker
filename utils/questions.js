@@ -31,7 +31,7 @@ const questions = () => {
             type: 'list',
             name: 'choice',
             message: 'What would you like to do?',
-            choices: ['View Departments', new inquirer.Separator(), 'View Roles', new inquirer.Separator(), 'View Employees', new inquirer.Separator(), 'Add a Department', new inquirer.Separator(), 'Add a Role', new inquirer.Separator(), 'Add an Employee', new inquirer.Separator(), 'Update an Employee Role']
+            choices: ['View Departments', new inquirer.Separator(), 'View Roles', new inquirer.Separator(), 'View Employees', new inquirer.Separator(), 'Add a Department', new inquirer.Separator(), 'Add a Role', new inquirer.Separator(), 'Add an Employee', new inquirer.Separator(), 'Update an Employee Role', new inquirer.Separator()]
         },
         {
             type: 'number',
@@ -180,6 +180,8 @@ const questions = () => {
         .then((response) => {
             if(response.confirm) {
                return questions();
+            } else {
+                console.log("Please enter ^C to exit.");
             }
         });
 };
