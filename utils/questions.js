@@ -1,5 +1,10 @@
 const inquirer = require('inquirer');
+const Deparment = require('../lib/Department.js');
+const Employee = require('../lib/Employee.js');
+const Role = require('../lib/Role.js');
 
+// Object declarations
+let department = new Deparment();
 
 const questions = () => {
     inquirer.prompt([{
@@ -16,7 +21,6 @@ const questions = () => {
 
     ])
         .then((data) => {
-            console.log("I made it to the data section.");
             console.log(data.confirm);
             if(data.confirm) {
                 questions();
