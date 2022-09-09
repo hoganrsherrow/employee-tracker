@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/hoganrsherrow/employee-tracker#readme",
   "dependencies": {
-    "inquirer": "^9.1.1",
+    "inquirer": "^8.0.0",
     "mysql2": "^2.3.3"
   }
 }
